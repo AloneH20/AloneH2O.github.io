@@ -8,7 +8,7 @@ function getSavedBackground() {
     return localStorage.getItem('bgImage');
 }
 
-// Cambiar la imagen de fondo
+// Cambiar la imagen de fondo desde el input
 function changeBackground() {
     const url = document.getElementById('bgImageUrl').value;
     if (url) {
@@ -37,7 +37,8 @@ function setDefaultBackground() {
 // Restablecer a la imagen inicial
 function resetBackground() {
     localStorage.removeItem('bgImage');
-    document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')";
+    const defaultImage = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb';
+    document.body.style.backgroundImage = `url('${defaultImage}')`;
     document.getElementById('bgImageUrl').value = '';
 }
 
