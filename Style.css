@@ -81,6 +81,7 @@ input[type="url"]:focus {
     outline: none;
 }
 
+/* Estilos para el botón y el enlace */
 button, .github-btn {
     background: linear-gradient(to right, #3498db, #2980b9);
     color: white;
@@ -95,9 +96,10 @@ button, .github-btn {
     align-items: center;
     justify-content: center;
     margin: 5px;
-    text-decoration: none; /* Para el enlace de GitHub */
+    text-decoration: none; /* Esto es para que el enlace a GitHub no se vea subrayado */
 }
 
+/* Estilo específico para el botón de GitHub */
 .github-btn {
     background: #333;
 }
@@ -131,10 +133,6 @@ button i, .github-btn i {
 
 .credit a:hover {
     text-decoration: underline;
-}
-
-.change-btn {
-    background: linear-gradient(to right, #3498db, #2980b9);
 }
 
 .default-btn {
