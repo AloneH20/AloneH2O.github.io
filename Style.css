@@ -48,6 +48,13 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    color: #6c7a89;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
 .input-group {
     margin: 25px 0;
 }
@@ -74,7 +81,7 @@ input[type="url"]:focus {
     outline: none;
 }
 
-button {
+button, .github-btn {
     background: linear-gradient(to right, #3498db, #2980b9);
     color: white;
     border: none;
@@ -88,14 +95,19 @@ button {
     align-items: center;
     justify-content: center;
     margin: 5px;
+    text-decoration: none; /* Para el enlace de GitHub */
 }
 
-button:hover {
+.github-btn {
+    background: #333;
+}
+
+button:hover, .github-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-button i {
+button i, .github-btn i {
     margin-right: 8px;
 }
 
@@ -121,6 +133,10 @@ button i {
     text-decoration: underline;
 }
 
+.change-btn {
+    background: linear-gradient(to right, #3498db, #2980b9);
+}
+
 .default-btn {
     background: linear-gradient(to right, #2ecc71, #27ae60);
 }
@@ -142,7 +158,7 @@ button i {
         flex-direction: column;
     }
     
-    button {
+    button, .github-btn {
         width: 100%;
         margin: 5px 0;
     }
